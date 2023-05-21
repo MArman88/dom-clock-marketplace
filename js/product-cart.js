@@ -92,10 +92,10 @@ function getActionControlOnCartItem(cart, priceTextView) {
     let div = document.createElement('div');
     let buttonDel = document.createElement('button');
 
-    addImageInsideButton(buttonDel, '../assets/minus.png');
+    addImageInsideButton(buttonDel, './assets/minus.png');
 
     let buttonAdd = document.createElement('button');
-    addImageInsideButton(buttonAdd, '../assets/add.png');
+    addImageInsideButton(buttonAdd, './assets/add.png');
 
     let inputNumberField = document.createElement('input');
     inputNumberField.type = "number";
@@ -188,7 +188,7 @@ function putColumnsInProductCartRow(cart, row) {
     let priceElm = document.createElement('td');
 
     const button = document.createElement('button');
-    addImageInsideButton(button, "../assets/delete.png");
+    addImageInsideButton(button, "./assets/delete.png");
 
     button.addEventListener('click', () => {
         removeItemFromCart(cart);
