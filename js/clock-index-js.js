@@ -86,3 +86,4 @@ function stop() {
     shouldBlink = false;
 }
 
+start();
